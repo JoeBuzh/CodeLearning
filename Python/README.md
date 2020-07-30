@@ -2,6 +2,9 @@
 
 #### 1.OOP
 
++ class(object)
+
++ instance(class)
 
 
 #### 2.类与实例的关系
@@ -17,6 +20,7 @@
  2. 类   内部class.xxx, 外部class.xxx
  3. 类变量一般在__init__之前声明, 每个实例均可共享
 
+
 #### 3.类方法与静态方法
 
 + 类方法
@@ -29,7 +33,7 @@
 + 静态方法
  1. @staticmethod
  2. def func(\*params): 需要self 或者 cls，不依赖于任务类和实例
- 3. 
+
 
 #### 4.继承
 
@@ -37,14 +41,26 @@
 
 + isinstance(), issubclass()
 
-+ 
-
-
 
 #### 5.特殊方法
 
++ __xxx__
+ 1. __repr__ 将实例内容输出字符串 -> 调试
+ 2. __str__  将对象实例内容输出   -> 应用开发 ，相当于Java的tostring
+ 3. __add__
+ 4. 可参考datetime模块的源代码
 
 
-#### 6.属性装饰器
+#### 6.属性装饰器 
 
++ 对于类种的属性，可用property装饰，在__init__后一部分属性改变后，此属性认可按照对应进行改变
 
++ 实现统一数据的同步
+
++ 对外暴露方法，所有属性隐藏，通过方法改变属性
+
++ property Decorators
+ 1. Getters
+ 2. Setters
+ 3. Deleters
+ 
