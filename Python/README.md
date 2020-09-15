@@ -25,7 +25,7 @@
 
 + 类方法
  1. @classmethod 
-    + def func(cls, \*params):
+    def func(cls, \*params):
  2. cls作用与self一样，self代表实例本身，cls代表类本身 
  3. 实例可以继承类的方法和属性
  4. 类方法一般用于创建对象实例
@@ -63,4 +63,3 @@
  1. Getters
  2. Setters
  3. Deleters
- 
